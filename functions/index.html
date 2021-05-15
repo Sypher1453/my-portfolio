@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      p {
+        font-weight: bold;
+        font-size: x-large;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: larger;
+      }
+      main{
+        background-color: lightblue;
+        display: flex;
+      }
+
+      .main{
+        background-color: white;
+        padding-right: 100px;
+        padding-left: 50px;
+        flex-grow: 2;
+      }
+
+      .ad{
+        border-right: 1px solid lightgray;
+        padding-right: 25px;
+        padding-left: 10px;
+        padding-top: 50px;
+        flex-grow: 1;
+      }
+
+      .projects{
+        display: inline-block;
+      }
+
+      .project_img{
+        width: 400px;
+      }
+
+      .ad_block{
+        border-radius: 5px;
+        //background-color: white;
+        //margin: 20px 10px 0 10px;
+        padding: 10px 5px 5px 5px;
+        text-align: center;
+        position: relative;
+      }
+
+      .index{
+        width: 220px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px 5px 5px 10px;
+        margin-bottom: 10px;
+      }
+
+      .section{
+        font-family: Sans-serif;
+        font-size: xx-large;
+      }
+
+      .projects{
+        padding: 10px;
+      }
+
+      .ad_img{
+        width: 150px;
+        border: 1px solid gray;
+        //height: 100px;
+        //margin: auto;
+      }
+
+      .ad_anno{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding: 1px;
+        border: 1px solid darkgray;
+      }
+
+      .aboutMe{
+        //border-radius: 20px;
+        //background-color: WhiteSmoke;
+        border-left: 3px dashed darkgray;
+        margin-left: 20px;
+        //padding: 2px;
+      }
+
+      /*
+      .projects{
+        border: 2px dashed darkgray;
+      }
+      */
+
+    </style>
+    <script>
+      function closeeExpain(_tag, this_tag){
+        document.getElementById(_tag).hidden = document.getElementById(_tag).hidden == false;
+        document.getElementById(this_tag).innerText = document.getElementById(_tag).hidden ? "+" : "-";
+      }
+    </script>
+  </head>
+  <body>
+  <hr>
+
+    <p>ABOUT ME</p>
+    <ul class="aboutMe">
+      <span class="title">Tech: 🛠</span>
+      <ul style="list-style-type:none;">
+        <li>Python[💖],  C/C++[💕],  Java[💞],  SQL[💕],  Haskell[💗],  GAS[💕]</li>
+      </ul>
+      <br>
+      <span class="title">Web & Design: 🎨</span>
+      <ul style="list-style-type:none;">
+        <li> Javascript[💖], Node.js[💗], django[💗], gimp[💕], SAI2[💕]</li>
+      </ul>
+      <br>
+      <span class="title">GitHub:</span> <svg height="16" viewBox="0 0 16 16" width="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+      <ul style="list-style-type:none;">
+        [URL:] <a href="https://github.com/Sypher1453">https://github.com/Sypher1453</a>
+      </ul>
+    </ul>
+
+  <hr>
+
+  <main>
+    <aside class="ad">
+      <div class="index">
+        <span style="font-size: large; font-weight: bold;">INDEX:</span>
+        <hr>
+        <ul>
+          <li>Personal projects</li>
+          <li>Favorites</li>
+        </ul>
+        <hr>
+        <span style="font-size: small">updated: May 4, 2021</span>
+      </div>
+      <hr>
+      <div class="ad_block">
+        <a href = "https://snowman-gaming.web.app">
+        <img class="ad_img" src= "https://lh3.googleusercontent.com/fife/ABSRlIoiTAXWRrKbiP9sWFoz2vFzLDe1Nm9VF71QFp9erD4E6eUVLvEwzAJYPhnGxP1nXLGNP73IDTW5HqJeXpiqYOe_kAqWHBWtJwoUNwxp715xqMm2ltwQRXsEdAZNQQz3WNJHgYxcK0Jr3yckr3FENFYVqJ9WP9bQ_fhXFn6hy561O1l_G27UYQZ4iuzHQpRnz8KGqYwh6GzIO6tj58EnKOkrPX0n98eJ4ICcYklVam1KYvuebUBhpgYZT32ZVqrWq7ZNEy5NLaNlBilfEruMy50sWsl0L4p-aMrovYQE07ZRmKwK6o_w5qYcLbMzky_zOdsrVW3VkElqz972DhGeidJIKe1zBAYHiLZCzT7QlplEIwyRGOhanrojr7wWSu7CJ-0EhySZfVTkTpQJ0PGp0Aixt3PfVHZjIO_Coxh_LGN4tppF5g-2vKsNYlWQddW6WFSMJ099IbWqRLBqQsCsA7W0Wl8bM1qMLnho3DTpYHDz4fu0yF2LbayZ9sYg6ZOm3YfqqOQtmKkuvMcHiLrEGjNzSpqL4_a6O0yLg2S00rcoiDFmgqGPv41XYU45sK9jaQZKDRDbSuTdiJ914waMUrjYhTGq256T9GnR2tCOP77zVVHWvuIR6MTFqtxiHh3oMeALFNhuSaAuaCJjmYsU6R2ptb-ua5l-OTr0b4uff8cRFZ1a2KxcAGaS6uB5kpMIcH6sCHllUvsItv8mIq9TYE4zbwItfTyRBoY=w400-h380-p-k-nu-ft">
+        </a>
+        <div class="ad_anno"><span style="color: gray">ad</span></div>
+     </div>
+    </aside>
+
+    <div class="main">
+      <div class="main_project">
+        <p class="section">Personal projects:</p>
+        <div class="projects">
+        <span class="title">Real time congestion estimator</span>
+        <br>
+        <!-- <button onclick="closeeExpain('explanation1', 'button1')", id="button1">-</button> -->
+        <div id="explanation1">
+          <ul>
+            <img class="project_img" src= "https://lh3.googleusercontent.com/fife/ABSRlIoC39u-rgDylgXSPonlngl5b_3bPEZD1U6E6rzehR0tCEqfP6q6KikyE7mUS50vNNfnqm64XPOVoFgzqmXAvNYXuFb6CIzjRE4-RhcxFGmcxPdZ6qubf2COaQS5aUosKZAArluQG_ySkcPOVG-tNG2oobyk6R0Lvt1d5u8RAhD_8Cdn01mYKDwzeLIFbdYyxtx13nM_0WT56hpOt_nseh-JJrAuerpNor8FbIIdbyQ650IZ1KcyyGA0mXvigxHbIXEr1J5ZYvOzv_i1eMiWlm4SIqbPcnrp4XNOTBMATrYxh3e08yAIrMn-Aa4eDSsu9tIy-HRm9PwbTOnVYtMwxLRwRLHbYJUJW8wJDQnVs1O5xlcpSlxp-mAZXdDDF7hM95EaOqDyVxwLCR77pkT0P79tfrj1_0eMdvQoza15P2qJoVHwgp7FTBYP80mZwmeylLP7Oi_xE03KaxARlqViPE2bfofsenuxducUoNY1U4z2nswEQX0kOx0S8aghGhSIywo4F21HmV-Mt--Ge0W0MFrjLJPXuQis5jyB7CBDY20Gj00Y13gV73h1lGT9t7Mi2FMzDOP1bLSJ5krHwZWTFqZ41vdiQwSX4d6YFkfC2GCFZHDjwRdWlqQh4sfHl8Kjyoe0YKNyf1pQuoFp_qpJ3AEuf5nHnNuKY1OsCoC53Srw9uCObSS-mnmGa7KfbQXJtC-VwV3S2kmFOr76ExX_s3zeJQf487Fl_-s=w600-k-nu-ft" >
+            <br>
+            <li> Tech stacks: 
+              <ul style="list-style-type:none;">
+                <li>Python, django, java, AndroidStudio</li>
+              </ul>
+            </li>
+            <li> details: 
+              <ul style="list-style-type:none;">
+                <li> Acquire users' movement especially entering/leaving, and forecast its future movement in the serer. Finally, send the forecasted result to all users including users who ain't inside the area.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="projects">
+        <span class="title">P2P file-change application</span>
+        <br>
+        <!-- <button onclick="closeeExpain('explanation1', 'button1')", id="button1">-</button> -->
+        <div id="explanation1">
+          <ul>
+            <img class="project_img" src= "https://lh3.googleusercontent.com/fife/ABSRlIquxpmnKYQSlgfsILUzZOZR3R9gjCyqINnFoQh_HMcXiwppoq99i9iAp935HuVBtHwSldFvSs4xT7oEkTwbVSlpzZe1L9oJaa-BUCOyCZyCYaCcXhLvlUIVAgXcDoKRdQbRyHXEDJuNGItiSW6yzbOgHZGjnuOgwFZ2HzPOPhC3YAnhD-a9kv00qvV-GyHjqtFd6mxfptDn_8bt1MaWYsV6ehiip1-aA4SiEBv8m7FczwhR88jq1X-av9y6DG09pJxuE3X_XxC2LrmC6975yyR73StVzvAoLlGFhLkTn6W1HyNVdNB0VSNeVpXqm5b7j9K1zWzyydOleAqwAw7nF-msW4k18Af6jNCvxDr1Pbf5E3Hz9RZQcKePO2opu5_GaluCZYVYo6b9S6nI_3gk31ky9_a3Wa7flTuZ6eGU7bc8qhP3bLtvJ03pShlvUAoKmSAhs2NWdnl1OgKVdVHw9x3khvxItzK1YC2vg2-hxfhshm00a6AJCfwl1Iv5D-eZmbPezp68IPrcw8Fqbq4rcr0JgG0FyMl8K1u3rVNZNGMIaZ41IqrrQmboQg8YHC45lMDa37Wc22DoDiGdxBg7V9Csbr6ZWFInlqZm-KCa-SHODigUCAGd9GETZxgxOg6wo2ZNp7OTlvO-AsIMNnPkcuM6Bh9kagbUe_ZsEOkjKSc4azlxHyqJ11gYzMRaDAzt1qy1zvWAVj593B2Yw8fk5CVjF_4CeorXrFs=w600-k-nu-ft" >
+            <br>
+            <li> Tech stacks: 
+              <ul style="list-style-type:none;">
+                <li>Python, basehttprequesthandler</li>
+              </ul>
+            </li>
+            <li> details: 
+              <ul style="list-style-type:none;">
+                <li> Send or recieve your files between two terminals.</li>
+              </ul>
+            </li>
+            <li> code: 
+              <ul style="list-style-type:none;">
+                <li> <a href="https://github.com/Sypher1453/P2P-data-file-transmission-within-local-network">github</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="projects">
+        <span class="title">No browsered bookmark</span>
+        <br>
+        <!-- <button onclick="closeeExpain('explanation2', 'button2')", id="button2">-</button> -->
+        <div id="explanation2" overflow-wrap: normal>
+          <ul>
+            <img class="project_img" src= "https://lh3.googleusercontent.com/fife/ABSRlIrbu7tmsunNEGdEjSMi-DyUABCAdgRAX16qT6ynlGwV9nIJqRnVnvaOznaaEGEfK42gUdIJf3-gZIvl0TYNzMW4-M1nstr5Zx3fRYIxoAInsUGH9ueqf4Q6EKPUv9BTmkPcJ8oQ4reknrnJD0MXhzkhXnEBLiOcjENfnS_qFCfr7VcnapUVAKRIudjCuUGYnXbMzKn5qqAkSb1wT4nZeZZXExmNnxx11jML1Rc0dkdBReOcj6KJqfTcP0M62U-esRZmBREQwSy484T_vC8aKry5PSRrpr_RI3V3pyAvHkYERp0oIGNfxYOg2AjfP3TK3aRzCrCteOaPz5lFxznJKBRHlHTFiAQcYGA-Yupw9-MJT8drJnNGABsLh9MxIBZ7H9Zm1m8kKayKATxptfM2jYMDZHcUvLGWDQ2Lj6Wehv86KhDwdnoQtEGqDw5zZXI5kZd7Zgb5YPMv1yMlVXB22FCXb-O6Bg_pyBoKSZdH68_BeI1gKgVHGxZDHm1JjWIZuzDTY92e3eI6f2o4RMVn5Wipudug4TphoqyMfFKqLIdZI7pb9gvoi6JHEv_P52_MBeC4-6jwJxYVBKHEuraRPboJz234OUTm1PbM1NiAqAH_YM5bXB_kqmkM2JFMN0QVPxZiApWAjr0wufxIX43cenIPBXk05CBn-YUtWBYYsLTUaDanBq_bj6-fLtv-fQw3ap2LuxjDKB7_XkqhXU9msfp_WRuU25UkFKQC_KA=w600-k-nu-ft" >
+            <br>
+            <li> Tech: 
+              <ul style="list-style-type:none;">
+                <li>MEAN stack, google extension</li>
+              </ul>
+            </li>
+            <li>details:
+              <ul style="list-style-type:none;">
+                <li>save your favorite web-sites into the server which rearranges your favorites by the details obtained from the site automaticaly.</li>
+              </ul>
+              <li> code: 
+                <ul style="list-style-type:none;">
+                  <li> <a href="https://github.com/Sypher1453/azekura">github</a></li>
+                </ul>
+              </li>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="projects">
+        <span class="title">2D-Game</span>
+        <div>
+          <ul>
+            <li>details:</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  </body>
+</html>
+
+
